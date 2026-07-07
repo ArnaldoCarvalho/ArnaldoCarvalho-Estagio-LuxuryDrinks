@@ -1,0 +1,1444 @@
+/*==================================================
+                    ABOUT PAGE
+==================================================*/
+
+.about-page{
+
+    min-height:100vh;
+
+    padding:120px 20px 80px;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(0,180,216,.08),
+    transparent 35%),
+    linear-gradient(
+    180deg,
+    #07111f 0%,
+    #0d1726 100%);
+
+}
+
+
+
+.about-container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/*==================================================
+                    HERO
+==================================================*/
+
+.about-hero{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+
+
+.about-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:rgba(0,180,216,.10);
+
+    border:1px solid rgba(0,180,216,.25);
+
+    border-radius:40px;
+
+    color:#00d4ff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-hero h1{
+
+    color:#ffffff;
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.about-hero h2{
+
+    color:#00cfff;
+
+    font-size:24px;
+
+    font-weight:500;
+
+    margin-bottom:30px;
+
+    line-height:1.5;
+
+}
+
+
+
+.about-description{
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#cfd8e3;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+
+
+
+
+/*==================================================
+                SECÇÕES
+==================================================*/
+
+.about-section{
+
+    margin-top:90px;
+
+}
+
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+
+
+.section-title span{
+
+    font-size:34px;
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.section-title h2{
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.section-title p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#bfc9d8;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/*==================================================
+                CARD BASE
+==================================================*/
+
+.card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    transition:.35s ease;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00cfff;
+
+    box-shadow:
+
+    0 18px 40px rgba(0,180,216,.20);
+
+}
+
+/*==================================================
+                ESTATÍSTICAS
+==================================================*/
+
+.about-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:90px;
+
+}
+
+
+
+.stat-card{
+
+    padding:35px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.stat-card h3{
+
+    font-size:42px;
+
+    color:#00d4ff;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.stat-card p{
+
+    color:#cfd8e3;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/*==================================================
+                OBJETIVOS
+==================================================*/
+
+.objectives-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.objective-card{
+
+    padding:35px;
+
+}
+
+
+
+.objective-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,212,255,.10);
+
+    border:1px solid rgba(0,212,255,.25);
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.objective-card h3{
+
+    color:#ffffff;
+
+    font-size:23px;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.objective-card p{
+
+    color:#cfd8e3;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/*==================================================
+            ÁREAS DE INTERVENÇÃO
+==================================================*/
+
+.areas-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.area-card{
+
+    padding:35px;
+
+}
+
+
+
+.area-card h3{
+
+    color:#00d4ff;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.area-card p{
+
+    color:#cfd8e3;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+
+
+.area-card ul{
+
+    margin-top:20px;
+
+    padding-left:20px;
+
+}
+
+
+
+.area-card li{
+
+    color:#d9e2ec;
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+
+}
+
+/*==================================================
+            ENTIDADES ENVOLVIDAS
+==================================================*/
+
+.companies-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:20px;
+
+}
+
+
+
+/*==================================================
+                CARD EMPRESA
+==================================================*/
+
+.company-card{
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.company-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #0088cc
+    );
+
+}
+
+
+
+.company-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+
+/*==================================================
+                    LOGOS
+==================================================*/
+
+.company-card img{
+
+    width:170px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin:0 auto 30px;
+
+    transition:.35s;
+
+}
+
+
+
+/* Logo Luxury maior */
+
+.company-card.luxury img{
+
+    width:230px;
+
+    height:100px;
+
+}
+
+
+
+.company-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+
+
+
+
+/*==================================================
+                TEXTO
+==================================================*/
+
+.company-card h3{
+
+    color:#ffffff;
+
+    font-size:25px;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.company-card p{
+
+    color:#cfd8e3;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    margin-bottom:22px;
+
+}
+
+
+
+.company-card span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:rgba(0,212,255,.10);
+
+    border:1px solid rgba(0,212,255,.25);
+
+    color:#00d4ff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/*==================================================
+                BOTÃO
+==================================================*/
+
+.company-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    background:#00b4d8;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+
+.company-btn:hover{
+
+    background:#00d4ff;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 30px rgba(0,212,255,.25);
+
+}
+
+
+
+
+
+/*==================================================
+            DIVISOR
+==================================================*/
+
+.section-divider{
+
+    width:120px;
+
+    height:4px;
+
+    margin:70px auto;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #0088cc
+    );
+
+}
+/*==================================================
+                CRONOGRAMA
+==================================================*/
+
+.schedule-section{
+
+    margin-top:100px;
+
+}
+
+
+
+.schedule-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+
+
+/*==================================================
+            CARD CRONOGRAMA
+==================================================*/
+
+.schedule-card{
+
+    position:relative;
+
+    padding:35px;
+
+    overflow:hidden;
+
+}
+
+
+
+.schedule-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:linear-gradient(
+        180deg,
+        #00d4ff,
+        #0088cc
+    );
+
+}
+
+
+
+.schedule-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+/*==================================================
+            NÚMERO DA ETAPA
+==================================================*/
+
+.schedule-number{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #00d4ff,
+        #0096c7
+    );
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+
+
+
+
+/*==================================================
+                TÍTULOS
+==================================================*/
+
+.schedule-card h3{
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.schedule-period{
+
+    color:#00d4ff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+
+
+
+
+/*==================================================
+                LISTA
+==================================================*/
+
+.schedule-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+
+.schedule-card li{
+
+    position:relative;
+
+    padding:12px 0 12px 28px;
+
+    color:#d7e2ec;
+
+    line-height:1.6;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+
+
+.schedule-card li:last-child{
+
+    border:none;
+
+}
+
+
+
+.schedule-card li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    top:12px;
+
+    color:#00d4ff;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+/*==================================================
+            LINHA DECORATIVA
+==================================================*/
+
+.schedule-grid::after{
+
+    content:"";
+
+    grid-column:1/-1;
+
+    width:160px;
+
+    height:4px;
+
+    margin:15px auto 0;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #0088cc
+    );
+
+}
+
+/*==================================================
+                DOWNLOAD
+==================================================*/
+
+.download-section{
+
+    margin-top:100px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.download-card{
+
+    padding:60px 50px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.download-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #0088cc
+    );
+
+}
+
+
+
+.download-card h2{
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.download-card p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#cfd8e3;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/*==================================================
+            BOTÃO DOWNLOAD
+==================================================*/
+
+.download-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #00b4d8,
+        #0096c7
+    );
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:
+    0 12px 30px rgba(0,180,216,.25);
+
+}
+
+
+
+.download-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:linear-gradient(
+        135deg,
+        #00d4ff,
+        #00b4d8
+    );
+
+    box-shadow:
+    0 18px 40px rgba(0,212,255,.30);
+
+}
+
+
+
+
+
+/*==================================================
+                ANIMAÇÕES
+==================================================*/
+
+.fade-up{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/*==================================================
+                UTILITÁRIOS
+==================================================*/
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+a{
+
+    transition:.3s ease;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+
+
+/*==================================================
+            SELEÇÃO DE TEXTO
+==================================================*/
+
+::selection{
+
+    background:#00d4ff;
+
+    color:#ffffff;
+
+}
+
+
+
+
+
+/*==================================================
+                SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+    background:#08111f;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#00b4d8;
+
+    border-radius:20px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#00d4ff;
+
+}
+
+/*==================================================
+                RESPONSIVO
+==================================================*/
+
+@media(max-width:1100px){
+
+    .about-container{
+
+        max-width:95%;
+
+    }
+
+    .about-hero h1{
+
+        font-size:42px;
+
+    }
+
+    .about-hero h2{
+
+        font-size:22px;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .objectives-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .areas-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .companies-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .schedule-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    .about-page{
+
+        padding:100px 20px 60px;
+
+    }
+
+    .about-hero{
+
+        margin-bottom:60px;
+
+    }
+
+    .about-tag{
+
+        font-size:13px;
+
+        padding:8px 18px;
+
+    }
+
+    .about-hero h1{
+
+        font-size:34px;
+
+        line-height:1.2;
+
+    }
+
+    .about-hero h2{
+
+        font-size:20px;
+
+    }
+
+    .about-description{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+    .section-title p{
+
+        font-size:15px;
+
+    }
+
+    .about-stats{
+
+        gap:20px;
+
+    }
+
+    .stat-card{
+
+        padding:28px 20px;
+
+    }
+
+    .stat-card h3{
+
+        font-size:34px;
+
+    }
+
+    .objective-card,
+    .area-card,
+    .company-card,
+    .schedule-card,
+    .download-card{
+
+        padding:28px;
+
+    }
+
+    .company-card img{
+
+        width:150px;
+
+    }
+
+    .company-card.luxury img{
+
+        width:200px;
+
+    }
+
+    .download-card h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+
+
+@media(max-width:560px){
+
+    .about-page{
+
+        padding:90px 15px 50px;
+
+    }
+
+    .about-hero h1{
+
+        font-size:30px;
+
+    }
+
+    .about-hero h2{
+
+        font-size:18px;
+
+    }
+
+    .about-description{
+
+        font-size:14px;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title h2{
+
+        font-size:24px;
+
+    }
+
+    .section-title span{
+
+        font-size:28px;
+
+    }
+
+    .company-card img{
+
+        width:120px;
+
+    }
+
+    .company-card.luxury img{
+
+        width:170px;
+
+    }
+
+    .schedule-number{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:20px;
+
+    }
+
+    .download-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+@media(max-width:400px){
+
+    .about-hero h1{
+
+        font-size:26px;
+
+    }
+
+    .about-hero h2{
+
+        font-size:17px;
+
+    }
+
+    .stat-card h3{
+
+        font-size:30px;
+
+    }
+
+    .objective-icon{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:24px;
+
+    }
+
+    .objective-card h3,
+    .area-card h3,
+    .company-card h3,
+    .schedule-card h3{
+
+        font-size:20px;
+
+    }
+
+    .download-card{
+
+        padding:35px 22px;
+
+    }
+
+    .download-card h2{
+
+        font-size:24px;
+
+    }
+
+    .download-btn{
+
+        padding:14px 20px;
+
+        font-size:15px;
+
+    }
+
+}

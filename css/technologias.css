@@ -1,0 +1,323 @@
+/*================ HEADER PAGE ================*/
+
+.page-header{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 20px 60px;
+}
+
+.hero-card{
+    max-width:900px;
+    text-align:center;
+    padding:50px;
+    background: rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:30px;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.4);
+}
+.hero-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background: rgba(0,229,255,.12);
+    color:#00e5ff;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.hero-card h1{
+    font-size:55px;
+    line-height:1.2;
+    margin-bottom:20px;
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #00e5ff
+    );
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero-card h2{
+    font-size:22px;
+    font-weight:400;
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.hero-description{
+    max-width:750px;
+    margin:auto;
+    color:#94a3b8;
+    font-size:16px;
+}
+
+/*============= VARIÁVEIS =============*/
+
+:root {
+    --primary: #2563EB;
+    --primary-light: #3B82F6;
+    --background: #08111F;
+    --secondary: #111827;
+    --text: #F8FAFC;
+    --text-light: #CBD5E1;
+    --text-gray: #94A3B8;
+    --border: rgba(255, 255, 255, .08);
+    --shadow: 0 18px 45px rgba(0, 0, 0, .35);
+    --radius: 22px;
+    --transition: .35s;
+}
+
+/*================ SECÇÕES ================*/
+
+.tech-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:50px;
+}
+
+.section-title span{
+    font-size:35px;
+}
+
+.section-title h2{
+    font-size:32px;
+    font-weight:700;
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #00e5ff
+    );
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/*================ GRID TECNOLOGIAS ================*/
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/*================ CARD TECNOLOGIA ================*/
+
+.tech-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:25px;
+    padding:35px 30px;
+    position:relative;
+    overflow:hidden;
+    transition:.4s ease;
+    backdrop-filter:blur(15px);
+}
+
+.tech-card::before{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:radial-gradient(
+        circle,
+        rgba(0,229,255,.25),
+        transparent 70%
+    );
+    top:-50px;
+    right:-50px;
+    opacity:0;
+    transition:.4s;
+}
+
+.tech-card:hover::before{
+    opacity:1;
+}
+
+.tech-card:hover{
+    transform:translateY(-10px);
+    border-color:#00e5ff;
+    box-shadow: 0 20px 40px rgba(0,229,255,.15);
+}
+
+/*================ LOGOS ================*/
+
+.tech-card img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.tech-card:hover img{
+    transform:scale(1.1);
+}
+
+/*================ TITULOS CARD ================*/
+
+.tech-card h3{
+    font-size:25px;
+    margin-bottom:8px;
+    color:#ffffff;
+}
+
+.tech-type{
+    color:#00e5ff;
+    font-size:14px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+/*================ DIVISOR ================*/
+
+.divider{
+    width:100%;
+    height:1px;
+    background:rgba(255,255,255,.15);
+    margin:20px 0;
+}
+
+/*================ SUBTITULOS ================*/
+
+.tech-card h4{
+    font-size:16px;
+    margin-bottom:15px;
+    color:#e2e8f0;
+}
+
+/*================ LISTA COMPETENCIAS ================*/
+
+.skills-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.skills-list li{
+    color:#cbd5e1;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.skills-list li::first-letter{
+    color:#00e5ff;
+}
+
+/*================ PROJETOS RELACIONADOS ================*/
+
+.project-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.project-list li a{
+    color:#94a3b8;
+    font-size:14px;
+    transition:.3s;
+    display:block;
+    padding:8px 12px;
+    border-radius:10px;
+}
+
+.project-list li a:hover{
+    color:#00e5ff;
+    background:rgba(0,229,255,.08);
+    transform:translateX(5px);
+}
+
+/*================ EFEITO ENTRADA ================*/
+
+.tech-card{
+    animation:fadeUp .6s ease forwards;
+}
+
+@keyframes fadeUp{
+    from{
+
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+
+    }
+    to{
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+}
+
+/*================ SCROLL DOWN BUTTON ================*/
+
+.scroll-down{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    color:#00e5ff;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.scroll-down:hover{
+    color:white;
+    transform:translateY(5px);
+}
+
+.scroll-down i{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    font-style:normal;
+    border:1px solid rgba(0,229,255,.5);
+    background:rgba(0,229,255,.08);
+    animation:bounceArrow 1.8s infinite;
+}
+
+@keyframes bounceArrow{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tech-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

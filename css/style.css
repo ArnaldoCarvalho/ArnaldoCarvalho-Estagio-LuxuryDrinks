@@ -1,0 +1,781 @@
+/*============= GOOGLE FONT =============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*============= RESET =============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #08111F;
+    color: #F8FAFC;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*============= VARIÁVEIS =============*/
+
+:root {
+    --primary: #2563EB;
+    --primary-light: #3B82F6;
+    --background: #08111F;
+    --secondary: #111827;
+    --text: #F8FAFC;
+    --text-light: #CBD5E1;
+    --text-gray: #94A3B8;
+    --border: rgba(255, 255, 255, .08);
+    --shadow: 0 18px 45px rgba(0, 0, 0, .35);
+    --radius: 22px;
+    --transition: .35s;
+}
+
+/*============= SCROLLBAR =============*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #08111F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563EB;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3B82F6;
+}
+
+/*============= BACKGROUND EFFECT =============*/
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(circle at top left,
+            rgba(37, 99, 235, .18),
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            rgba(6, 182, 212, .15),
+            transparent 40%);
+}
+
+/*============= NAVBAR =============*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(18px);
+    background: rgba(8, 17, 31, .78);
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+}
+
+nav ul li a {
+    position: relative;
+    color: #CBD5E1;
+    font-size: 15px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #3B82F6;
+    transition: var(--transition);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/*============= HERO =============*/
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 30px;
+}
+
+.hero-card {
+    width: 100%;
+    max-width: 980px;
+    background: rgba(17, 24, 39, .82);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 28px;
+    padding: 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+/*============= BACKGROUND EFFECTS =============*/
+
+.hero-card::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: rgba(37, 99, 235, .14);
+    border-radius: 50%;
+    top: -180px;
+    right: -120px;
+    filter: blur(80px);
+}
+
+.hero-card::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: rgba(6, 182, 212, .12);
+    border-radius: 50%;
+    bottom: -140px;
+    left: -120px;
+    filter: blur(70px);
+}
+
+.hero-card>* {
+    position: relative;
+    z-index: 2;
+}
+
+/*============= HERO TAG =============*/
+
+.hero-tag {
+    display: inline-block;
+    padding: 9px 18px;
+    background: rgba(37, 99, 235, .15);
+    border: 1px solid rgba(37, 99, 235, .35);
+    border-radius: 50px;
+    color: #60A5FA;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*============= TITLES =============*/
+
+.hero-card h1 {
+    font-size: 44px;
+    font-weight: 800;
+    color: #FFF;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.hero-card h2 {
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/*============= DESCRIPTION =============*/
+
+.hero-description {
+    max-width: 680px;
+    margin: auto;
+    color: var(--text-gray);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/*============= INSTITUTION GRID =============*/
+
+.institution-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+/*============= INSTITUTION CARD =============*/
+
+.institution-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 20px;
+    padding: 25px;
+    transition: all .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.institution-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563EB, #38BDF8);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .35s;
+}
+
+.institution-card:hover {
+    transform: translateY(-6px);
+    border-color: #2563EB;
+    background: rgba(37, 99, 235, .08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+}
+
+.institution-card:hover::before {
+    transform: scaleX(1);
+}
+
+/*============= LOGOS =============*/
+
+.institution-card img {
+    width: 105px;
+    height: 65px;
+    object-fit: contain;
+    margin: auto;
+    margin-bottom: 15px;
+    transition: .35s;
+}
+
+.institution-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/*============= TEXT =============*/
+
+.institution-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.institution-card p {
+    color: #CBD5E1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.institution-card span {
+    display: inline-block;
+    padding: 8px 14px;
+    background: rgba(37, 99, 235, .15);
+    border-radius: 30px;
+    color: #60A5FA;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/*============= AUTHOR =============*/
+
+.author {
+    margin: 28px 0;
+}
+
+.author h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.author p {
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+/*============= BUTTONS =============*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #2563EB, #3B82F6);
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .35s;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .30);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(37, 99, 235, .45);
+}
+
+/*============= FOOTER =============*/
+
+footer{
+    margin-top:60px;
+    background:#050C17;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/*============= FOOTER CONTAINER =============*/
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 40px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+
+/*============= FOOTER MAIN =============*/
+
+.footer-main h2{
+    color:white;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.footer-main p{
+    color:#94A3B8;
+    line-height:1.8;
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+/*============= FOOTER SECTIONS =============*/
+
+.footer-section h3{
+    color:#60A5FA;
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.footer-section ul{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-section li{
+    color:#CBD5E1;
+    transition:.3s;
+}
+
+.footer-section li:hover{
+    color:white;
+    transform:translateX(5px);
+}
+
+.footer-section a{
+    color:#CBD5E1;
+    transition:.3s;
+}
+
+.footer-section a:hover{
+    color:#60A5FA;
+}
+
+/*============= FOOTER BOTTOM =============*/
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    text-align:center;
+    padding:20px;
+}
+
+.footer-bottom p{
+    color:#64748B;
+    font-size:14px;
+    letter-spacing:.4px;
+}
+
+/*============= ANIMAÇÕES =============*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 0 rgba(37,99,235,.25);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 25px rgba(37,99,235,.25);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 rgba(37,99,235,.25);
+
+    }
+
+}
+
+/*============= HERO ANIMATION =============*/
+
+.hero-card{
+    animation:fadeUp .8s ease;
+}
+
+/*============= INSTITUTION CARDS =============*/
+
+.institution-card{
+    animation:fadeUp 1s ease;
+}
+
+.institution-card img{
+    animation:float 6s ease-in-out infinite;
+}
+
+/*============= BUTTONS =============*/
+
+.btn{
+    animation:fadeIn 1.2s ease;
+}
+
+.btn:hover{
+    animation:glow 2s infinite;
+}
+
+/*============= LINKS =============*/
+
+a{
+    transition:.3s;
+}
+
+/*============= HERO TITLE =============*/
+
+.hero-card h1{
+    letter-spacing:.5px;
+}
+
+.hero-card h2{
+    font-weight:400;
+}
+
+/*============= HOVER EFFECTS =============*/
+
+.hero-card{
+    transition:.35s;
+}
+
+.hero-card:hover{
+    transform:translateY(-3px);
+}
+
+.institution-card{
+    cursor:pointer;
+}
+
+.logo{
+    transition:.35s;
+}
+
+.logo:hover{
+    transform:scale(1.03);
+}
+
+/*============= SELECTION =============*/
+
+::selection{
+    background:#2563EB;
+    color:white;
+}
+
+/*============= FOCUS =============*/
+
+button:focus,
+a:focus{
+    outline:none;
+}
+
+/*============= RESPONSIVE =============*/
+
+/* ---------- Tablets ---------- */
+@media (max-width: 1100px){
+    .footer-container{
+        grid-template-columns:2fr 1fr 1fr;
+        gap:13px;
+    }
+}
+
+@media (max-width: 900px){
+    nav{
+        padding:15px 25px;
+    }
+
+    nav ul{
+        gap:18px;
+    }
+
+    .hero{
+        padding:90px 20px 30px;
+    }
+
+    .hero-card{
+        max-width:90%;
+        padding:35px;
+    }
+
+    .hero-card h1{
+        font-size:38px;
+    }
+
+    .hero-card h2{
+        font-size:19px;
+    }
+
+    .institution-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:35px;
+    }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:700px){
+    header{
+        position:relative;
+    }
+    nav{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:16px;
+    }
+
+    .hero{
+        padding:40px 15px;
+        min-height:auto;
+    }
+
+    .hero-card{
+        padding:30px 20px;
+    }
+
+    .hero-tag{
+        font-size:12px;
+    }
+
+    .hero-card h1{
+        font-size:30px;
+    }
+
+    .hero-card h2{
+        font-size:17px;
+    }
+
+    .hero-description{
+        font-size:14px;
+    }
+
+    .institution-card{
+        padding:22px;
+    }
+
+    .institution-card img{
+        width:90px;
+        height:60px;
+    }
+
+    .luxury-logo{
+        width:150px !important;
+        height:auto !important;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+}
+
+/* ---------- Mobile Pequeno ---------- */
+
+@media (max-width:480px){
+    .logo h2{
+        font-size:20px;
+    }
+
+    nav ul{
+        font-size:14px;
+    }
+
+    .hero-card{
+        border-radius:20px;        
+    }
+
+    .hero-card h1{
+        font-size:26px;
+    }
+
+    .hero-card h2{
+        font-size:15px;
+    }
+
+    .institution-card h3{
+        font-size:18px;
+    }
+
+    .institution-card p{
+        font-size:13px;
+    }
+
+    .footer-main h2{
+        font-size:24px;
+    }
+
+    .footer-main p{
+        font-size:14px;
+    }
+
+    .footer-section h3{
+        font-size:18px;
+    }
+
+    .footer-bottom p{
+        font-size:13px;
+    }
+
+}
